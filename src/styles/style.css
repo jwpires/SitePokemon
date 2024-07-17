@@ -1,0 +1,92 @@
+.flex-container-geral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container-geral input{
+    width: 50%;
+    height: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+.topoHome img{
+    width: 100%;
+    margin: 10px auto 50px auto;
+}
+
+.flex-container-pokemons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.quadroPokemon{
+    margin: 0px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/src/image/poke.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nomePokemon{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* 
+.modal{
+    z-index: 100;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, .5);
+    background-color: red;
+    margin: 100px auto 0 auto;
+    color: #FFF;
+}
+
+.modalHeader{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttonInfoPokemon{
+    border: #000 solid 3px;
+} */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Modal backdrop */
+    
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Adjust as needed */
+    /* max-height: 800px; */
+    overflow-y: auto;
+    background-color: rgba(255, 52, 42, 0.7) ;
+    border-radius: 10px; /* Optional for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
